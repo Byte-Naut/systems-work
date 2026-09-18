@@ -10,14 +10,16 @@
 | SOL Score | 0.577614 |
 | Fast₁ | 16/16 |
 | Workload coverage | 16 shapes, with correctness and performance requirements |
-| Leaderboard rank | #12 |
-| Latency | 0.025256 ms |
-| Average speedup | 1.26× |
+| Leaderboard rank | #12 on kernel #38 / B200, checked 2026-09-19 |
+| Latency (leaderboard aggregate) | 0.025256 ms |
+| Avg Speedup (leaderboard aggregate) | 1.26× |
 | Submission date | 2026-09-15 |
 
-[Submission #47128](https://research.nvidia.com/benchmarks/sol-execbench/submission/47128), submitted as Byte-Naut, was accepted with Evaluation Stack v1.1. The submission page includes all 16 workload results, with per-workload speedups of 1.04×–1.92×.
+[Submission #47128](https://research.nvidia.com/benchmarks/sol-execbench/submission/47128), submitted as Byte-Naut, was accepted with Evaluation Stack v1.1. The [public B200 leaderboard](https://research.nvidia.com/benchmarks/sol-execbench/leaderboard/kernel/38/B200) lists the aggregate result. The [saved submission results (HTML)](../evidence/sol-execbench-47128.html), captured on 2026-09-18, preserve the Accepted status, timestamps, and all 16 workload results. Per-workload speedups range from 1.04× to 1.92×.
 
 ## Benchmark results
+
+Values below are transcribed from the saved submission page, retaining its displayed precision.
 
 | Workload | Latency (ms) | Baseline (ms) | Speedup | SOL Score |
 | --- | ---: | ---: | ---: | ---: |
@@ -42,8 +44,8 @@
 
 The work involved warp reductions, 128-bit vectorized memory access, kernel fusion, occupancy and memory-hierarchy considerations, and numerical validation. B200 evaluation feedback was used alongside tests on other GPUs during development.
 
-## Reading the metric
+## Reading the metrics
 
-NVIDIA defines SOL Score as a normalized function of submission latency, stored baseline latency, and an estimated hardware limit. A single kernel's score averages its workload scores. See the [official methodology](https://research.nvidia.com/benchmarks/sol-execbench/blog/introducing-sol-execbench).
+NVIDIA defines SOL Score as a normalized function of submission latency, stored baseline latency, and an estimated hardware limit. For one kernel, it is the arithmetic mean of the workload scores. Fast₁ 16/16 means all 16 workloads pass correctness checks and run faster than the scoring baseline. The summary latency and Avg Speedup above are the aggregate values displayed on the B200 leaderboard; individual workload measurements appear in the table. See the [official methodology](https://research.nvidia.com/benchmarks/sol-execbench/blog/introducing-sol-execbench).
 
 [Back to the index](../README.md)
