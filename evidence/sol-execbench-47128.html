@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SOL-ExecBench submission #47128 — Byte-Naut</title>
+<style>
+body { font-family: system-ui, sans-serif; line-height: 1.5; max-width: 980px; margin: 2rem auto; padding: 0 1rem; color: #222; }
+h1 { font-size: 1.8rem; }
+dl { display: grid; grid-template-columns: 12rem 1fr; gap: .4rem 1rem; }
+dt { font-weight: 600; }
+dd { margin: 0; overflow-wrap: anywhere; }
+.table-wrap { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+th, td { padding: .55rem .7rem; border-bottom: 1px solid #ddd; text-align: right; white-space: nowrap; }
+th:first-child, td:first-child { text-align: left; }
+footer { margin-top: 2rem; }
+@media (max-width: 560px) { dl { grid-template-columns: 1fr; } dd { margin-bottom: .5rem; } }
+</style>
+</head>
+<body>
+<main>
+<h1>SOL-ExecBench submission #47128</h1>
+<p>Result extract from the NVIDIA submission page saved on <time datetime="2026-09-18T11:47:16+08:00">2026-09-18 at 11:47:16 UTC+08:00</time>.</p>
+<p><a href="https://research.nvidia.com/benchmarks/sol-execbench/submission/47128">Original submission</a> · <a href="https://research.nvidia.com/benchmarks/sol-execbench/leaderboard/kernel/38/B200">Public B200 leaderboard</a> · <a href="../cases/sol-execbench-rmsnorm.md">Case study</a></p>
+<h2>Details</h2>
+<dl>
+<dt>Status</dt><dd>Accepted</dd>
+<dt>Evaluation Stack</dt><dd>v1.1</dd>
+<dt>Kernel</dt><dd>038_flux_multi_head_rmsnorm_qk</dd>
+<dt>Device</dt><dd>B200</dd>
+<dt>User</dt><dd>Byte-Naut</dd>
+<dt>Mode</dt><dd>Public</dd>
+<dt>Submitted At</dt><dd><time datetime="2026-09-15T09:15:29+08:00">2026-09-15 09:15:29 UTC+08:00</time></dd>
+<dt>Evaluation Started</dt><dd><time datetime="2026-09-15T09:15:31+08:00">2026-09-15 09:15:31 UTC+08:00</time></dd>
+<dt>Evaluation Finished</dt><dd><time datetime="2026-09-15T09:16:06+08:00">2026-09-15 09:16:06 UTC+08:00</time></dd>
+<dt>Submitted File</dt><dd>solution.json</dd>
+<dt>Result</dt><dd>AC</dd>
+<dt>SOL Score</dt><dd>0.577614</dd>
+</dl>
+<h2>Benchmark Results</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th scope="col">Workload</th><th scope="col">Latency (ms)</th><th scope="col">Baseline (ms)</th><th scope="col">Speedup</th><th scope="col">SOL Score</th></tr></thead>
+<tbody>
+<tr><td>batch_size=2, seq_len=128</td><td>0.0069</td><td>0.0104</td><td>1.50x</td><td>0.629520</td></tr>
+<tr><td>batch_size=4, seq_len=1657</td><td>0.0973</td><td>0.1072</td><td>1.10x</td><td>0.541761</td></tr>
+<tr><td>batch_size=4, seq_len=1024</td><td>0.0618</td><td>0.0667</td><td>1.08x</td><td>0.532605</td></tr>
+<tr><td>batch_size=8, seq_len=773</td><td>0.0927</td><td>0.1027</td><td>1.11x</td><td>0.543451</td></tr>
+<tr><td>batch_size=8, seq_len=128</td><td>0.0191</td><td>0.0225</td><td>1.18x</td><td>0.562601</td></tr>
+<tr><td>batch_size=2, seq_len=293</td><td>0.0122</td><td>0.0175</td><td>1.44x</td><td>0.625094</td></tr>
+<tr><td>batch_size=16, seq_len=256</td><td>0.0619</td><td>0.0665</td><td>1.07x</td><td>0.530403</td></tr>
+<tr><td>batch_size=1, seq_len=1024</td><td>0.0190</td><td>0.0224</td><td>1.18x</td><td>0.561869</td></tr>
+<tr><td>batch_size=4, seq_len=256</td><td>0.0189</td><td>0.0224</td><td>1.19x</td><td>0.563960</td></tr>
+<tr><td>batch_size=1, seq_len=128</td><td>0.0049</td><td>0.0093</td><td>1.92x</td><td>0.689702</td></tr>
+<tr><td>batch_size=32, seq_len=128</td><td>0.0631</td><td>0.0666</td><td>1.06x</td><td>0.522949</td></tr>
+<tr><td>batch_size=4, seq_len=512</td><td>0.0330</td><td>0.0376</td><td>1.14x</td><td>0.552979</td></tr>
+<tr><td>batch_size=1, seq_len=131</td><td>0.0049</td><td>0.0094</td><td>1.92x</td><td>0.688679</td></tr>
+<tr><td>batch_size=8, seq_len=256</td><td>0.0330</td><td>0.0374</td><td>1.13x</td><td>0.550881</td></tr>
+<tr><td>batch_size=1, seq_len=8192</td><td>0.1188</td><td>0.1234</td><td>1.04x</td><td>0.516844</td></tr>
+<tr><td>batch_size=1, seq_len=256</td><td>0.0070</td><td>0.0105</td><td>1.50x</td><td>0.628524</td></tr>
+</tbody>
+</table>
+</div>
+<h2>Execution Log</h2>
+<p>stdout: No output<br>stderr: No output</p>
+</main>
+<footer><p>Measurements and field names are preserved from the saved NVIDIA page. This extract omits navigation, fonts, and account controls.</p></footer>
+</body>
+</html>
