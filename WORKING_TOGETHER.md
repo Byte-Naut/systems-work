@@ -10,6 +10,6 @@ I provide a patch or experiment artifact, enough explanation to evaluate its beh
 
 I publish under **Byte-Naut**. Any administrative identity requirements need to be stated separately from public attribution and evaluated before engagement.
 
-Contact: [Byte-Naut@proton.me](mailto:Byte-Naut@proton.me).
+Contact: [Byte-Naut@proton.me](mailto:Byte-Naut@proton.me), [2025llxe@gmail.com](mailto:2025llxe@gmail.com).
 
 [Case studies](README.md)
