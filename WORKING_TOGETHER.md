@@ -1,6 +1,6 @@
 # Working together
 
-I take on bounded systems tasks through written, asynchronous collaboration. My current focus is WebAssembly runtime correctness, resource lifetimes, and host integration; closely related compiler, database, and runtime problems are also relevant.
+I take on bounded systems tasks through written, asynchronous collaboration. My current focus is WebAssembly runtime correctness, resource lifetimes, compiled-call ABI, and host integration; closely related compiler, database, and stateful tooling problems are also relevant.
 
 I am also open to structured open-source participation with a defined period and scope, including engineering projects, open-source internships, and mentorship programs. These collaborations should have a clear timeframe, expected outcomes, review process, and documented contribution record.
 
